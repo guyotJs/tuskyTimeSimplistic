@@ -12,10 +12,6 @@
   let day = date.getDate();
   let month = date.getMonth();
   let year = date.getFullYear();
-  let selectedDate = date;
-  let selectedMonth = month;
-  let selectedDay = day;
-  let selectedYear = year;
   let dateString;
   function prev(){month --; if(month < 0){year --; month = 11}}
   function post(){month ++; if(month > 11){year ++; month = 0}}
