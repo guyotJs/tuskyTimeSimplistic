@@ -1,5 +1,6 @@
 <script>
   import tt from './tt.json';
+  import * as animateScroll from "svelte-scrollto";  
   import Header from './lib/Header.svelte';
   let active = false;
   function toggle(){
@@ -23,7 +24,13 @@
       return year + "-" + (month+1) + "-" + day;
     }
   }
-  
+  function resetDate(){
+    date = new Date();
+    day = date.getDate();
+    month = date.getMonth();
+    year = date.getFullYear();
+    dateString =  compileTT();
+  }
   function select(input){
     day = input;
     dateString = compileTT();
@@ -38,6 +45,12 @@ h1{
   font-family: serif!important;
 }
 main{font-family: serif!important;line-height: 1.6!important;}
+span i {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  margin-right: 10px;
+}
 </style>
 <main>
   <Header/>
@@ -60,8 +73,8 @@ main{font-family: serif!important;line-height: 1.6!important;}
   </div>
 
   <div class="custom-date">
-    <div class="selected"  on:click={toggle}>
-      &nbsp;<i class="fa fa-calendar" style="font-size:20px"></i>&nbsp;{dateString.replace(/-/g,'/')}
+    <div class="selected"  on:click={toggle} on:click={() => animateScroll.scrollToBottom()}>
+      &nbsp;<i class="fa fa-calendar" style="font-size:20px"></i>&nbsp;{dateString.replace(/-/g,'/')}<span><i class="fa fa-remove" on:click={resetDate}></i></span>
     </div>
     <div class="dates {active ? 'active' : ''}">
       <div class="month">
