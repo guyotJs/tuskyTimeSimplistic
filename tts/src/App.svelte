@@ -18,7 +18,7 @@
   }
 </script>
 <style>
-  .btn{background-color: lightgray; border: 0;border-radius: 5px;}
+  .btn{background-color: white; border: 1;border-radius: 5px;}
 </style>
 <main>
   Today is
