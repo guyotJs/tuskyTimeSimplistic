@@ -38,7 +38,6 @@ h1{
   font-family: serif!important;
 }
 main{font-family: serif!important;line-height: 1.6!important;}
-.blue{color: #6882d3;text-align: center; font-family: serif!important; position: fixed; bottom: 0; left: 50%;transform: translate(-50%);z-index: -1;}
 </style>
 <main>
   <Header/>
@@ -82,4 +81,3 @@ main{font-family: serif!important;line-height: 1.6!important;}
     </div>
   </div><br/><br/>
 </main>
-<div class="blue">not affiliated with LCPS or Tuscarora, A recreation of Tuskytime.org by, Easton Snow in Svelte</div>
