@@ -5,31 +5,26 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #9db6f8;
 }
-h1 {
-    margin: 30px 0px;
-    color: #313131;
-    font-size: 42px;
-    font-weight: 900;
+.options{
     text-align: center;
-}  
-h1 span{
-    font-weight: 300;
+    font-family: serif!important;
 }
 .custom-date{
+    border-radius: 10px;
     position: relative;
     width: 100%;
-    max-width: 280px;
-    height: 50px;
-    background-color: #FFF;
+    max-width: 200px;
+    height: 40px;
+    background-color: #819eec;
+    border: 1px solid #2307f4;
     margin: 30px auto;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
-
     cursor: pointer;
     user-select: none;
 }
 .custom-date:hover{
-    background-color: #F3F3F3;
+    background-color: #819eec;
 }
 .custom-date .dates{
     display: none;
@@ -38,41 +33,44 @@ h1 span{
     left: 0;
     right: 0;
 
-    background-color: #FFF;
 }
 .custom-date .dates.active{
+    margin-top: 10px;
     display: block;
+    background-color: #819eec;
+    border: 1px solid #2307f4;
+    border-radius: 10px;
 }
 .custom-date .selected{
     width: 100%;
     height: 100%;
-
     display:flex;
-    justify-content: center;
     align-items: center;
-    color: #313131;
-    font-size: 28px;
+    color: #2307f4;
+    font-size: 15px;
 }
 .custom-date .dates .month{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #EEE;
 }
+.mth{color:#2307f4;}
 .custom-date .dates .month .arrows{
     width: 35px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #313131;
+    color: #2307f4;
     font-size: 20px;
 }
 .custom-date .dates .month .arrows:hover{
-    background-color: #F3F3F3;
+    background-color: #6882d3;
+    border-radius: 10px;
 }
 .custom-date .dates .month .arrows:active{
-    background-color: #ffffff;
+    background-color: #6882d3;
+    border-radius: 10px;
 }
 .custom-date .dates .days{
     display: grid;
@@ -83,6 +81,9 @@ h1 span{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #313131;
-    border: 1px solid #000;
+    color: #2307f4;
+}
+.daySelect{
+    background-color: #3116fc4c;
+    border-radius: 10px;
 }
