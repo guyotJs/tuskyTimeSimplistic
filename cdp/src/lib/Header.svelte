@@ -2,14 +2,18 @@
 
 </script>
 <style>
-    main{font-family: serif;}
-    h1{
-        text-align: center;
+    .bg{
         background-color: #6882d3;
-        padding: 10px;
-        margin-bottom: 50px;
+        text-align: center;
+        padding: 0px;
+        font-size:35px;
+        font-family: serif!important;
+        font-weight: 600;
+        width:100%;
     }
 </style>
 <main>
-    <h1>TUSKY TIME</h1>
+    <div class="bg w3-row">
+        <img src="https://tuskytime.org/_nuxt/tuskylogo.9abafe6e.png" alt="oy" width="80px"/><b>TUSCARORA TIME</b>
+    </div><br/><br/>
 </main>

@@ -31,10 +31,14 @@
   dateString = compileTT();
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 h1{
-  font-size: 50px;
+  font-size: 60px;
+  font-family: serif!important;
 }
+main{font-family: serif!important;line-height: 1.6!important;}
+.blue{color: #6882d3;text-align: center; font-family: serif!important; position: fixed; bottom: 0; left: 50%;transform: translate(-50%);z-index: -1;}
 </style>
 <main>
   <Header/>
@@ -46,13 +50,13 @@ h1{
       AN
       {:else}
       A
-    {/if}<br/>
-    <h1>{tt[dateString].day}</h1>
+    {/if}
+    <h1><b>{tt[dateString].day}</b></h1>
     DAY<br/>
     AND TODAY IS TUSKY TIME<br/>
-    <h1>{tt[dateString].TT}</h1>
+    <h1><b>{tt[dateString].TT}</b></h1>
     {:else}
-    THERE IS NO SCHOOL
+    THERE IS<br/> <h1><b>NO SCHOOL</b></h1><br/>YOU absolute BUFFOON
   {/if}
   </div>
 
@@ -76,5 +80,6 @@ h1{
         {/each}
       </div>
     </div>
-  </div>
+  </div><br/><br/>
 </main>
+<div class="blue">not affiliated with LCPS or Tuscarora, A recreation of Tuskytime.org by, Easton Snow in Svelte</div>
